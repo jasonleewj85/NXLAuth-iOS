@@ -1,0 +1,16 @@
+PODS:
+  - AppAuth (0.94.0)
+
+DEPENDENCIES:
+  - AppAuth (from `../../../AppAuth-iOS/`)
+
+EXTERNAL SOURCES:
+  AppAuth:
+    :path: "../../../AppAuth-iOS/"
+
+SPEC CHECKSUMS:
+  AppAuth: fa4d2c133f97f947d96d3a82a27d2bbd11230afc
+
+PODFILE CHECKSUM: 39f7ca70ac3611244f87c027913ce2441bd89072
+
+COCOAPODS: 1.5.3

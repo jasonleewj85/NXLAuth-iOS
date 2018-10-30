@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C0B7FC67CC103C9A1DB317 /* libPods-NXLAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1320B7256DFA2FB4BB58BA /* libPods-NXLAuth.a */; };
 		96EAC80C2187FE2B007F55D1 /* NXLAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EAC80A2187FE2B007F55D1 /* NXLAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96EAC8142187FFB4007F55D1 /* NXLAppAuthManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EAC8122187FFB4007F55D1 /* NXLAppAuthManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96EAC8152187FFB4007F55D1 /* NXLAppAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EAC8132187FFB4007F55D1 /* NXLAppAuthManager.m */; };
+		96EAC818218809EE007F55D1 /* NXLScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EAC816218809EE007F55D1 /* NXLScopes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96EAC819218809EE007F55D1 /* NXLScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EAC817218809EE007F55D1 /* NXLScopes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A026DDFA9312073BBFE9353 /* Pods-NXLAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NXLAuth/Pods-NXLAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		844B25356FAB95CFA5746077 /* Pods-NXLAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-NXLAuth/Pods-NXLAuth.release.xcconfig"; sourceTree = "<group>"; };
 		96EAC8072187FE2B007F55D1 /* NXLAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NXLAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EAC80A2187FE2B007F55D1 /* NXLAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXLAuth.h; sourceTree = "<group>"; };
 		96EAC80B2187FE2B007F55D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96EAC8122187FFB4007F55D1 /* NXLAppAuthManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXLAppAuthManager.h; sourceTree = "<group>"; };
+		96EAC8132187FFB4007F55D1 /* NXLAppAuthManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXLAppAuthManager.m; sourceTree = "<group>"; };
+		96EAC816218809EE007F55D1 /* NXLScopes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXLScopes.h; sourceTree = "<group>"; };
+		96EAC817218809EE007F55D1 /* NXLScopes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXLScopes.m; sourceTree = "<group>"; };
+		EF1320B7256DFA2FB4BB58BA /* libPods-NXLAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NXLAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C0B7FC67CC103C9A1DB317 /* libPods-NXLAuth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16C8290F23D4DE232B8B09F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A026DDFA9312073BBFE9353 /* Pods-NXLAuth.debug.xcconfig */,
+				844B25356FAB95CFA5746077 /* Pods-NXLAuth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		96EAC7FD2187FE2B007F55D1 = {
 			isa = PBXGroup;
 			children = (
 				96EAC8092187FE2B007F55D1 /* NXLAuth */,
 				96EAC8082187FE2B007F55D1 /* Products */,
+				16C8290F23D4DE232B8B09F8 /* Pods */,
+				DEF8837B3C712EE9A80D63D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +72,20 @@
 			children = (
 				96EAC80A2187FE2B007F55D1 /* NXLAuth.h */,
 				96EAC80B2187FE2B007F55D1 /* Info.plist */,
+				96EAC8122187FFB4007F55D1 /* NXLAppAuthManager.h */,
+				96EAC8132187FFB4007F55D1 /* NXLAppAuthManager.m */,
+				96EAC816218809EE007F55D1 /* NXLScopes.h */,
+				96EAC817218809EE007F55D1 /* NXLScopes.m */,
 			);
 			path = NXLAuth;
+			sourceTree = "<group>";
+		};
+		DEF8837B3C712EE9A80D63D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF1320B7256DFA2FB4BB58BA /* libPods-NXLAuth.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +95,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EAC818218809EE007F55D1 /* NXLScopes.h in Headers */,
 				96EAC80C2187FE2B007F55D1 /* NXLAuth.h in Headers */,
+				96EAC8142187FFB4007F55D1 /* NXLAppAuthManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96EAC80F2187FE2B007F55D1 /* Build configuration list for PBXNativeTarget "NXLAuth" */;
 			buildPhases = (
+				5F9FA13723C7F7F338E4A9E6 /* [CP] Check Pods Manifest.lock */,
 				96EAC8022187FE2B007F55D1 /* Headers */,
 				96EAC8032187FE2B007F55D1 /* Sources */,
 				96EAC8042187FE2B007F55D1 /* Frameworks */,
@@ -125,11 +164,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F9FA13723C7F7F338E4A9E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NXLAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96EAC8032187FE2B007F55D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EAC8152187FFB4007F55D1 /* NXLAppAuthManager.m in Sources */,
+				96EAC819218809EE007F55D1 /* NXLScopes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +318,7 @@
 		};
 		96EAC8102187FE2B007F55D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A026DDFA9312073BBFE9353 /* Pods-NXLAuth.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -271,7 +334,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.nexlife.NXLAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.nexlife.auth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -280,6 +343,7 @@
 		};
 		96EAC8112187FE2B007F55D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844B25356FAB95CFA5746077 /* Pods-NXLAuth.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -295,7 +359,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.nexlife.NXLAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.nexlife.auth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
